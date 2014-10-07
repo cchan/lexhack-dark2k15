@@ -9,20 +9,11 @@ $yellow: #FFC747; .yellow {color: $yellow;}
 
 // $blue: #4391E0;
 $blue: #479AFF; .blue {color: $blue;}
-
 $light-blue: #B5D8FF; .light-blue {color: $light-blue;}
 $dark-blue: #0029A6; .dark-blue {color: $dark-blue;}
-
-
-
-
 $black: #242424; .black{color: $black;}
 $light-gray: #DDDDDD; .light-gray{color: $light-gray;}
 $white: 	#F7F7F7; .white{color: $white;}
-
-
-
-
 
 body {
 	margin: 0;
@@ -84,7 +75,7 @@ a {
 	background-color: rgba(64,64,64,0.6);
 	// background-color: #fcfcfc;
 	font-family: 'Source Sans Pro';
-	a {
+	a.link {
 		color: $light-blue;
 	}
 }
@@ -167,31 +158,27 @@ header {
 	border-radius: 5px;
 	text-decoration: none;
 	border: none;
+	color: $white;
+	font-weight: bold;
+	background-color: $black;
 	font-family: 'Source Sans Pro';
 	&:hover {
 		cursor: pointer;
+		color: $yellow;
 	}
 }
 
 #main-button {
-	// color: #444;
-	// color: $yellow;
-	padding: 1.2em;
+	padding: 0.8em;
 	display: inline-block;
-	// color: #F9F9F9;
-	background-color: $blue;
 	font-family: Montserrat;
-	font-size: 1.2em;
+	font-size: 1em;
 	margin-top: 1.6em;
-	// font-weight: bold;
 	letter-spacing: -0.01em;
-	transition: color 300ms;
+	// transition: color 300ms;
 	box-shadow: inset 0 -1px 7px #444;
 	&:active {
 		box-shadow: inset 0 1px 7px #444;
-	}
-	&:hover {
-		color: #F9F9F9;
 	}
 }
 
@@ -203,7 +190,8 @@ header {
 	font-family: 'Source Sans Pro';
 	label {
 		font-size: 1em;
-		line-height: 1.4em;
+		text-align:center;
+		line-height:.3em;
 		display: block;
 		margin: 1em 0;
 	}
@@ -221,10 +209,8 @@ header {
 }
 
 #mc-embedded-subscribe {
-	background-color: $blue;
-	color: $light-blue;
-	padding: 1em;
-	font-weight: bold;
-	font-size: 1em;
+	font-size:1.5em;
+	padding: .5em;
 	width: 100%;
+	letter-spacing: +0.02em;
 }
