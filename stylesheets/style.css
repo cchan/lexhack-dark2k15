@@ -1,24 +1,59 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+.yellow {
+  color: #FFC747; }
+
+.blue {
+  color: #479AFF; }
+
+.light-blue {
+  color: #B5D8FF; }
+
+.dark-blue {
+  color: #0029A6; }
+
+.black {
+  color: #242424; }
+
+.light-gray {
+  color: #DDDDDD; }
+
+.white {
+  color: #F7F7F7; }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #EAEAEA;
   font-family: 'Source Sans Pro'; }
 
-.yellow {
-  color: #ffc747; }
+.lexhack::before {
+  content: "Lex";
+  color: #242424; }
+
+.lexhack.white::before {
+  content: "Lex";
+  color: #F7F7F7; }
+
+.lexhack::after {
+  content: "Hack";
+  color: #FFC747; }
+
+.lexhack.black::after {
+  content: "Hack";
+  color: #242424; }
 
 .logo {
-  color: #F7F7F7;
+  color: #242424;
   font-family: Montserrat;
-  font-size: 3.2em;
+  font-size: 4em;
   font-weight: bold;
-  line-height: 0.6em; }
+  line-height: 0.6em;
+  letter-spacing: -0.06em; }
 
 a {
-  color: #479aff; }
+  color: #479AFF; }
 
 #intro {
   font-size: 26px;
@@ -28,7 +63,7 @@ a {
   background-color: rgba(64, 64, 64, 0.6);
   font-family: 'Source Sans Pro'; }
   #intro a {
-    color: #b5d8ff; }
+    color: #B5D8FF; }
 
 section {
   font-size: 24px;
@@ -53,24 +88,11 @@ section {
 nav {
   height: 80px;
   z-index: 1;
-  background-color: #b5d8ff;
+  background-color: #B5D8FF;
   position: relative;
   box-shadow: 0 2px 14px rgba(128, 128, 128, 0.4); }
   nav a {
     color: white; }
-
-.bg {
-  position: relative;
-  min-height: 900px;
-  min-width: 100%;
-  -webkit-filter: blur(2px);
-  z-index: -1; }
-
-.icon {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  font-size: 1.6em; }
 
 .img-container {
   position: absolute;
@@ -78,10 +100,18 @@ nav {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  z-index: -1; }
+  z-index: -1;
+  background-color: black; }
+  .img-container .bg {
+    position: fixed;
+    min-height: 900px;
+    min-width: 100%;
+    -webkit-filter: blur(2px);
+    z-index: -1;
+    opacity: 0.5; }
 
 header {
-  background-color: #ffc747;
+  background-color: #FFC747;
   font-family: Montserrat;
   padding: 1.6em 0;
   text-align: center; }
@@ -100,7 +130,7 @@ header {
 #main-button {
   padding: 1.2em;
   display: inline-block;
-  background-color: #479aff;
+  background-color: #479AFF;
   font-family: Montserrat;
   font-size: 1.2em;
   margin-top: 1.6em;
@@ -133,9 +163,11 @@ header {
   margin-bottom: 0.6em; }
 
 #mc-embedded-subscribe {
-  background-color: #479aff;
-  color: #b5d8ff;
+  background-color: #479AFF;
+  color: #B5D8FF;
   padding: 1em;
   font-weight: bold;
   font-size: 1em;
   width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
